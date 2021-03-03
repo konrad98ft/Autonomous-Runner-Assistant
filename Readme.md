@@ -10,6 +10,10 @@ Advanced lines tracking connected with PID speed and position controll acquire o
 
 Program is running on Rasbperry Pi 3B+ with is connected by USB with Arduino Mega.
 Vision system is based on C++ and OpenCv liblary.
+### Elements and connections plan
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/62110076/109812419-53b97380-7c2c-11eb-95f4-8dd0b00b5d90.png"/> 
+</p>
 
 ## Image Processing in few steps
 
@@ -42,10 +46,14 @@ Moreover it Arduino is responsible for:
 ## Validation on the real track
 
  ### Good quality surface
- 
  ![image](https://user-images.githubusercontent.com/62110076/109810296-a9d8e780-7c29-11eb-945e-0fb9a665b833.png)
  
- ### Poor quality surface
- 
+ ### Poor quality surface 
  ![image](https://user-images.githubusercontent.com/62110076/109810810-4b603900-7c2a-11eb-8188-ab57c769f656.png)
+ 
+ ### Driving video
+https://user-images.githubusercontent.com/62110076/109813366-8b74eb00-7c2d-11eb-8d2b-8f8a951a25d8.mp4
+
+
+ 
 
