@@ -6,7 +6,7 @@ Advanced lines tracking connected with PID speed and position controll acquire o
 Program is running on Rasbperry Pi 3B+ with is connected by USB with Arduino Mega.
 Vision system is based on C++ and OpenCv liblary.
 
-## Image Processing in few staps
+## Image Processing in few steps
 Image is procssing in few steps:
 -Orygnial image
 -ROI - Region of Intrests
