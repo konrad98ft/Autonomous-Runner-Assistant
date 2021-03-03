@@ -1,9 +1,12 @@
 # Runner-Asistant
+
 Vision system for autonomous robot supporting runners in traning by driving in front of them with helps to keep proper running pace. 
 Advanced lines tracking connected with PID speed and position controll acquire optimall support to realise traning goals. 
 
 Program is running on Rasbperry Pi 3B+ with is connected by USB with Arduino Mega.
 Vision system is based on C++ and OpenCv liblary.
+
+## Image Processing in few staps
 Image is procssing in few steps:
 -Orygnial image
 -ROI - Region of Intrests
@@ -19,6 +22,8 @@ Image is procssing in few steps:
 -Finding lines with belongs to 1 real line
 -Finding centr of the track
 -Counting difference between actual position and optimal position
+
+
 After that operation data is send to the Arduino. uC recalculates value in pixels into the turning angle of robot.
 Moreover it Arduino is responsible for:
 -speed controlling
