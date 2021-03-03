@@ -8,7 +8,7 @@ Vision system is based on C++ and OpenCv liblary.
 
 ## Image Processing in few steps
 Image is procssing in many steps, the most important are mentioned above:
-* Orygnial image
+* Orgnial image
 * ROI - Region of Intrests
 * Grayscale
 * Tresholing
