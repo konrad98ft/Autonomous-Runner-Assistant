@@ -7,6 +7,9 @@ Program is running on Rasbperry Pi 3B+ with is connected by USB with Arduino Meg
 Vision system is based on C++ and OpenCv liblary.
 
 ## Image Processing in few steps
+
+![itscreen](https://user-images.githubusercontent.com/62110076/109809584-c1fc3700-7c28-11eb-9409-9d83b883d08b.png)
+
 Image is procssing in many steps, the most important are mentioned above:
 * Orgnial image
 * ROI - Region of Intrests
