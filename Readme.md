@@ -3,6 +3,8 @@
 Vision system for autonomous robot supporting runners in traning by driving in front of them with helps to keep proper running pace. 
 Advanced lines tracking connected with PID speed and position controll acquire optimall support to realise traning goals. 
 
+![image](https://user-images.githubusercontent.com/62110076/109811145-be69af80-7c2a-11eb-88a9-19722bf09a8f.png)
+
 Program is running on Rasbperry Pi 3B+ with is connected by USB with Arduino Mega.
 Vision system is based on C++ and OpenCv liblary.
 
