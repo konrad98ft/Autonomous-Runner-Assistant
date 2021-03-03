@@ -1,7 +1,6 @@
 # Runner-Assistant
  
-Vision system for autonomous robot supporting runners in traning by driving in front of them with helps to keep proper running pace. 
-Advanced lines tracking connected with PID speed and position controll acquire optimall support to realise traning goals. 
+Vision system for autonomous robot supporting runners in training. Robot is driving in front of the runner on the track and keep proper pace with helps to acquire training goals. Device is using advanced lines tracking connected with PID speed and position control.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/62110076/109811145-be69af80-7c2a-11eb-88a9-19722bf09a8f.png"/ width="40%" > 
@@ -17,9 +16,9 @@ Vision system is based on C++ and OpenCv liblary.
 
 ## Image Processing in few steps
 
-Image is procssing in many steps, the most important are mentioned above:
+Image is processing in many steps, the most important are mentioned above:
 * Orgnial image
-* ROI - Region of Intrests
+* ROI - Region of Interests
 * Grayscale
 * Tresholing
 * Bluring
@@ -28,20 +27,19 @@ Image is procssing in many steps, the most important are mentioned above:
 * Hough Transform - to find straight lines
 * Collection lines into vector
 * Lines filtration
-* Spliting lines into groups besed on their slope
+* Splitting lines into groups based on their slope
 * Finding lines with belongs to 1 real line
-* Finding centr of the track
+* Finding centre of the track
 * Counting difference between actual position and optimal position
 
 ### Example steps on the simulated image
 ![itscreen](https://user-images.githubusercontent.com/62110076/109809584-c1fc3700-7c28-11eb-9409-9d83b883d08b.png)
 
-After that operation informations are sending to the Arduino. uC recalculates value in pixels into the turning angle of robot.
-Moreover it Arduino is responsible for:
+After that operations information is sended to the Arduino. uC recalculates value in pixels into the turning angle of robot. Moreover,  Arduino is responsible for:
 * speed controlling
 * sensors support
 * communication with mobile app
-* carrying out traning program
+* carrying out training program
 
 ## Validation on the real track
 
