@@ -8,9 +8,9 @@ using namespace cv;
 using namespace std;
 
 VideoCapture video;
-int debug = 2; //0-any windows, 1-orginal+steeing,2-additonal debug windows,3-all windows
+int debug = 1; //0-any windows, 1-orginal+steeing,2-additonal debug windows,3-all windows
 int prevSteering = 0;
-int resize_x = 600;
+int resize_x = 600; // window size
 int resize_y = 400;
 
 vector< vector<double> > change_lines_notation(vector< vector<double> > vect, vector <Vec4i> lines)
@@ -221,7 +221,7 @@ Mat prepareImage(Mat img_orginal)
 	if (debug >= 2) imshow("IMG Grayscale", img_grayscale); resizeWindow("IMG Grayscale", resize_x, resize_y);
 
 	//binary treshold
-	threshold(img_grayscale, img_grayscale, 145, 255, THRESH_BINARY);
+	threshold(img_grayscale, img_grayscale, 185, 255, THRESH_BINARY);
 	if (debug >= 2) namedWindow("Treshold", 0);
 	if (debug >= 2) imshow("Treshold", img_grayscale); resizeWindow("Treshold", resize_x, resize_y);
 	blur(img_grayscale, img_grayscale, Size(10, 10));
@@ -405,7 +405,7 @@ int giveSteering(Mat &img_orginal, vector <Vec4i> lines)
 }
 int screenTest()
 {
-		Mat img_orginal=imread("k1.jpg");
+		Mat img_orginal=imread("real_good_quality_track_6.jpg");	//CHANGE FILE IF NEEDED
 		if(debug>=1) namedWindow("Orginal", 0);						
 		if (debug >= 1) imshow("Orginal", img_orginal); resizeWindow("Orginal", resize_x, resize_y);
 
@@ -423,9 +423,8 @@ int screenTest()
 }
 int videoTest()
 {
-	//video.open("mov1.mp4");
-	//video.open("mov2.mp4");
-	video.open("mov3.mp4");
+	// early and middle stage video are up to date becasue of fixed camera positin 
+	video.open("video_late_test_1.mp4");	//CHANG FILE IF NEEDED
 	if (!video.isOpened())
 	{
 		cout << "Nie znaleznione video";
@@ -531,12 +530,11 @@ int ex11()
 
 int main()
 {
-	//videoTest();
-	screenTest();
+	//Chose what are You going to test single image or video
+	videoTest();
+	//screenTest();
 
-	//cout<< ex9();
 	waitKey(0);
-
 
 	return 1;
 }
